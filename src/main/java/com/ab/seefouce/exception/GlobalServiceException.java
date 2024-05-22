@@ -4,11 +4,7 @@ import com.ab.seefouce.common.enums.GlobalServiceStatusCode;
 import lombok.Getter;
 
 /**
- * Created With Intellij IDEA
- * Description:
- * User: 马拉圈
- * Date: 2024-01-18
- * Time: 15:44
+ * @author cattleyuan
  */
 @Getter
 public class GlobalServiceException extends RuntimeException{

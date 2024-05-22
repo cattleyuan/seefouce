@@ -1,5 +1,6 @@
 package com.ab.seefouce.common.enums;
 
+import lombok.Builder;
 import lombok.Getter;
 
 /**
@@ -8,9 +9,6 @@ import lombok.Getter;
  * Please note that status code definitions are module-specific
  * and do not occupy other business modules when defining them.
  * </span>
- *
- * @author jettcc in 2024/01/11
- * @version 1.0
  */
 @Getter
 public enum GlobalServiceStatusCode {
@@ -43,13 +41,6 @@ public enum GlobalServiceStatusCode {
 
     USER_NO_PERMISSION(2403, "用户无权限"),
     USER_CAPTCHA_CODE_ERROR(2500, "验证码错误"),
-
-     /* 邮箱错误 3001-4000 */
-    EMAIL_PATTERN_ERROR(3001, "邮箱格式错误"),
-    EMAIL_SEND_FAIL(3002, "邮箱发送失败"),
-
-    EMAIL_NOT_EXIST_RECORD(3101, "邮箱不存在记录"),
-    EMAIL_CAPTCHA_CODE_COUNT_EXHAUST(3103, "申请次数达到上限"),
 
     /* -------------- */;
 

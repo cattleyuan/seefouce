@@ -12,9 +12,6 @@ import java.time.LocalDateTime;
  * <span>
  * classes that inherit this entity all have auto-incrementing ID.
  * </span>
- *
- * @author jettcc in 2023/12/07
- * @version 1.0
  */
 @Getter
 @Setter

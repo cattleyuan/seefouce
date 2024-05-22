@@ -12,9 +12,6 @@ import java.util.UUID;
  * <span>
  * Mybatis fill config
  * </span>
- *
- * @author jettcc in 2024/01/23
- * @version 1.0
  */
 @Component
 @EnableTransactionManagement

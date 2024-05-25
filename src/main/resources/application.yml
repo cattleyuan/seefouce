@@ -6,9 +6,10 @@ spring:
 # 日志配置
 logging:
   level:
-    com.achobeta: debug
+    com.ab.seefouce: debug
     org.springframework: warn
     tech.powerjob.worker.background: warn
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
   config: classpath:logback-plus.xml
 
 # mp设置

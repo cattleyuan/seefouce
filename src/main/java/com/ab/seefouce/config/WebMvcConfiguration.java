@@ -25,8 +25,8 @@ public class WebMvcConfiguration extends WebMvcConfigurationSupport {
     protected void addInterceptors(InterceptorRegistry registry) {
 
         registry.addInterceptor(userInterpretor)
-                .addPathPatterns("/api/v1/user/**")
-                .excludePathPatterns("/api/v1/user/login");
+                .addPathPatterns("/api/v1/**")
+                .excludePathPatterns("/api/v1/login");
 
     }
 

@@ -1,4 +1,4 @@
-package com.ab.seefouce.jwt.util;
+package com.ab.seefouce.utils;
 
 
 import com.ab.seefouce.common.enums.GlobalServiceStatusCode;
@@ -7,6 +7,7 @@ import io.jsonwebtoken.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.validation.annotation.Validated;
 
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
@@ -16,6 +17,7 @@ import java.util.Map;
 
 @RequiredArgsConstructor
 @Slf4j
+@Validated
 public class JwtUtil {
 
     /**

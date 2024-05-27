@@ -1,8 +1,5 @@
 package com.ab.seefouce.common.constants;
 
-import com.ab.seefouce.domain.fitgoal.service.FitnessGoalService;
-import lombok.Getter;
-
 /**
  * @author cattleyuan
  * @date 2024/5/24

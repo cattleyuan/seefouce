@@ -1,6 +1,5 @@
 package com.ab.seefouce.common.enums;
 
-import lombok.Builder;
 import lombok.Getter;
 
 /**
@@ -41,6 +40,9 @@ public enum GlobalServiceStatusCode {
 
     USER_NO_PERMISSION(2403, "用户无权限"),
     USER_CAPTCHA_CODE_ERROR(2500, "验证码错误"),
+
+    USER_CANCLE_FAIL_FOLLOW(2501,"取消关注失败"),
+    USER_FAIL_FOLLOW(2503,"关注失败")
 
     /* -------------- */;
 

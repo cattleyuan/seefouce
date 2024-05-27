@@ -2,7 +2,7 @@ package com.ab.seefouce.common.base;
 
 import com.ab.seefouce.exception.GlobalServiceException;
 
-import java.nio.file.OpenOption;
+
 import java.util.Optional;
 
 /**
@@ -14,7 +14,7 @@ public class UserContextHolder {
     private static ThreadLocal<UserHelper> threadLocal=new ThreadLocal();
 
     public static void set(UserHelper userHelper){
-        Optional.ofNullable(userHelper).orElseThrow(()->new GlobalServiceException("无效的线程局部变量获取设置"));
+        Optional.ofNullable(userHelper).orElseThrow(()->new GlobalServiceException("无效的线程局部变量设置"));
         threadLocal.set(userHelper);
     }
     public static UserHelper get(){

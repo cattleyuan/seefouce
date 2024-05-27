@@ -37,7 +37,11 @@ public class UserInterpretor implements HandlerInterceptor {
 
     public static final String USER_ID = "userId";
     public static final String OPENID = "openid";
-    public static final String NICK_NAME = "nickName";
+
+    @Override
+    public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
+        UserContextHolder.remove();
+    }
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -82,7 +86,6 @@ public class UserInterpretor implements HandlerInterceptor {
 
         userHelper.setUserId(Long.valueOf(claims.get(USER_ID).toString()));
         userHelper.setOpenid((String) claims.get(OPENID));
-        userHelper.setNickName((String) claims.get(NICK_NAME));
 
         UserContextHolder.set(userHelper);
     }

@@ -25,7 +25,7 @@ public class AuthController {
 
     private final AuthService authService;
 
-    /*
+    /**
      * @description: 登录兼注册接口
      * @author: cattleyuan
      * @date: 2024/5/23 22:39

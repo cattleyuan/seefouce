@@ -17,6 +17,4 @@ public class UserHelper {
     //用户openid
     String openid;
 
-    //用户昵称
-    String nickName;
 }

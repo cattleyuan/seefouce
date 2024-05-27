@@ -65,6 +65,6 @@ public class GlobalExceptionHandler {
             map.put(field,message);
         });
 
-        return SystemJsonResponse.CUSTOMIZE_ERROR(PARAM_FAILED_VALIDATE);
+        return SystemJsonResponse.CUSTOMIZE_MSG_ERROR(PARAM_FAILED_VALIDATE,map.toString());
     }
 }
